@@ -1,0 +1,118 @@
+:root {
+  --bg: #f8f8f8;
+  --fg: #222;
+  --muted: #777;
+  --border: #e5e5e5;
+  --link: #2b6cb0;
+  --card-bg: #fff;
+  --max-width: 720px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161b22;
+    --fg: #e6e6e6;
+    --muted: #999;
+    --border: #2d333b;
+    --link: #6fa8dc;
+    --card-bg: #1c2128;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.8;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 1.2rem 0;
+  margin-bottom: 2rem;
+}
+
+header .wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a.site-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+a { color: var(--link); }
+
+.post-list { list-style: none; margin: 0; padding: 0; }
+
+.post-card {
+  display: block;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card h2 {
+  margin: 0 0 .4rem;
+  font-size: 1.15rem;
+  color: var(--fg);
+}
+
+.post-card .meta {
+  font-size: .85rem;
+  color: var(--muted);
+  margin-bottom: .4rem;
+}
+
+.post-card .desc {
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+.article-header h1 {
+  margin-bottom: .3rem;
+}
+
+.article-meta {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-image {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.article-body p { margin: 0 0 1rem; }
+.article-body hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+.article-body img { max-width: 100%; border-radius: 6px; }
+
+.back-link { display: inline-block; margin-top: 2rem; }
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: .85rem;
+  padding: 2rem 0;
+}
+
+.loading, .error { color: var(--muted); padding: 2rem 0; }
