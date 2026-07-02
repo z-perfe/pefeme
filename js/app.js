@@ -30,7 +30,7 @@ async function renderIndex() {
   const list = document.getElementById('post-list');
   try {
     const posts = await fetchPostsIndex();
-    list.innerHTML = posts.map((p) => `
+    list.innerHTML = posts.filter((p) => !p.hidden).map((p) => `
       <a class="post-card" href="post.html?slug=${encodeURIComponent(p.slug)}">
         <h2>${p.title}</h2>
         <div class="meta">${p.date}${p.category ? ' · ' + p.category : ''}</div>

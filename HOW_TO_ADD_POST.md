@@ -35,12 +35,14 @@ image: "images/wo-de-xin-wenzhang.jpg"
   "date": "2026-07-01",
   "description": "一句话简介",
   "category": "",
-  "image": "images/wo-de-xin-wenzhang.jpg"
+  "image": "images/wo-de-xin-wenzhang.jpg",
+  "hidden": false
 }
 ```
 
 - `slug` 必须和 `posts/` 里的文件名（不含 `.md`）完全一致，否则文章打开会 404。
 - 首页按 `posts.json` 数组顺序展示，越靠前显示越靠前，通常把新文章放在数组最前面。
+- `hidden` 设为 `true` 可将文章从首页列表隐藏（仍可通过 `post.html?slug=` 直接访问）；设为 `false` 或省略则正常显示。
 
 ## 4. 本地预览
 
