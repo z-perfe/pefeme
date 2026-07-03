@@ -1,4 +1,31 @@
 [
+    {
+    "slug": "wu-ti-san-shou",
+    "title": "无题三首",
+    "date": "2026-07-03",
+    "description": "我是梦穿魂不穿，故园风雨怨流年.",
+    "category": "",
+    "image": "images/hao-mang-xin-shi.jpg",
+    "hidden": false
+  },
+    {
+    "slug": "dao-nian",
+    "title": "悼念",
+    "date": "2024-02-19",
+    "description": "青烟半盏君销骨，曾是人间第一流。",
+    "category": "",
+    "image": "images/hao-mang-xin-shi.jpg",
+    "hidden": false
+  },
+    {
+    "slug": "zhao-cai",
+    "title": "纪念我的招财",
+    "date": "2024-02-19",
+    "description": "回犹似电流波",
+    "category": "",
+    "image": "images/zhao-cai.jpg",
+    "hidden": false
+  },
   {
     "slug": "zhou-wu",
     "title": "周五",
@@ -9,31 +36,13 @@
     "hidden": false
   },
   {
-    "slug": "hao-mang-xin-shi",
-    "title": "浩茫心事未成眠",
-    "date": "2024-02-19",
-    "description": "浩茫心事未成眠, 夜夜撸猫不解馋.心梗欲袭全裸日, 归来死去美少年.",
-    "category": "",
-    "image": "images/hao-mang-xin-shi.jpg",
-    "hidden": false
-  },
-  {
-    "slug": "zhao-cai",
-    "title": "纪念我的招财",
-    "date": "2024-02-19",
-    "description": "预想别情几复多,梦回犹似电流波.魔神此去喵星乱,不理人间一小撮.",
-    "category": "",
-    "image": "images/zhao-cai.jpg",
-    "hidden": false
-  },
-  {
     "slug": "jiu-shi-zhe",
     "title": "救世者",
     "date": "2024-02-19",
     "description": "背诵你的俯身，为生灵涂炭的城，涂抹大红大紫，举世欢腾。",
     "category": "",
     "image": "images/jiu-shi-zhe.jpg",
-    "hidden": false
+    "hidden": true
   },
   {
     "slug": "yi-fei-ta",
@@ -42,7 +51,7 @@
     "description": "现在回过头真是刹那，但当时如何的不甘心啊！",
     "category": "",
     "image": "images/yi-fei-ta.jpg",
-    "hidden": false
+    "hidden": true
   },
   {
     "slug": "wu-ming-shi",
@@ -69,7 +78,7 @@
     "description": "一个青衣雪剑,一个皓齿红唇,刚不顾一切拥吻,转眼成敌人",
     "category": "犹记",
     "image": "images/di-ren.jpg",
-    "hidden": false
+    "hidden": true
   },
   {
     "slug": "wei-wan-cheng",
@@ -82,7 +91,7 @@
   },
   {
     "slug": "qing-dian",
-    "title": "夏天",
+    "title": "庆典",
     "date": "2024-02-19",
     "description": "把永远当终点，走几年已疲倦，是冬日阳光，有心无力的温暖",
     "category": "",
@@ -96,7 +105,7 @@
     "description": "最后一次你的吻，漫不经心，象夏天的云，被晒哭的表情",
     "category": "",
     "image": "images/xia-tian.jpg",
-    "hidden": false
+    "hidden": true
   },
   {
     "slug": "yu-hou",
@@ -123,7 +132,7 @@
     "description": "想着你，现在在哪里？是不是看天色，也会坏了心情？",
     "category": "",
     "image": "images/gu-dan-gong-yuan-de-bei-ying-copy.jpg",
-    "hidden": false
+    "hidden": true
   },
   {
     "slug": "huang-cheng",

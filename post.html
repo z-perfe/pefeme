@@ -7,14 +7,22 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <a class="site-title" href="index.html">Pefe.me</a>
-    </div>
-  </header>
-  <main>
-    <div class="loading" id="article">加载中...</div>
-  </main>
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="images/backgroup-video.mp4" type="video/mp4">
+  </video>
+  <div class="site-card">
+    <header>
+      <div class="wrap">
+        <div class="site-title-group">
+          <img class="site-logo" src="images/logo.png" alt="Pefe.me logo">
+          <a class="site-title" href="index.html">Pefe.me</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="loading" id="article">加载中...</div>
+    </main>
+  </div>
   <footer>由简单的静态博客驱动</footer>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="js/app.js"></script>
