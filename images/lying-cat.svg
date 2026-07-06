@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -56 340 148" fill="none" stroke="#2b2b2b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <!-- head + back silhouette, floating above the edge except nose and tail-base -->
+  <path d="M10,0
+           Q4,-18 16,-26
+           Q40,-40 66,-30
+           Q90,-20 130,-24
+           Q180,-30 230,-22
+           Q270,-14 300,-4
+           Q305,-1 308,0"/>
+
+  <!-- ears -->
+  <path d="M20,-28 L26,-50 L36,-32"/>
+  <path d="M38,-32 L46,-52 L54,-28"/>
+
+  <!-- closed sleepy eye -->
+  <path d="M20,-22 q6,-6 12,0" stroke-width="5"/>
+
+  <!-- dangling front paw -->
+  <path d="M90,-20 Q84,10 92,30 Q96,38 106,34" stroke-width="7"/>
+
+  <!-- tail, swings from the base point -->
+  <g>
+    <path d="M305,-2 Q325,20 328,50 Q330,75 310,82 Q296,86 288,74" stroke-width="7"/>
+    <animateTransform attributeName="transform" type="rotate"
+      values="0 305 -2; 10 305 -2; 0 305 -2; -7 305 -2; 0 305 -2"
+      dur="3.2s" repeatCount="indefinite"/>
+  </g>
+</svg>
