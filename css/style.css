@@ -30,18 +30,12 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  animation: bg-breathe 8s ease-in-out infinite;
-}
-
-@keyframes bg-breathe {
-  0%, 100% { filter: blur(0px); }
-  50% { filter: blur(8px); }
 }
 
 .site-card {
   position: relative;
   max-width: var(--max-width);
-  margin: 4.5rem 0 3rem 2rem;
+  margin: 4.5rem auto 3rem;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.96);
   box-shadow:
@@ -74,20 +68,13 @@ header .wrap {
   padding: 0 2.5rem;
   display: flex;
   align-items: center;
-  gap: .6rem;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 header .site-title-group {
   display: flex;
   align-items: center;
   gap: .6rem;
-}
-
-header .site-logo {
-  height: 2.2rem;
-  width: 2.2rem;
-  object-fit: contain;
 }
 
 header a.site-title {
@@ -98,8 +85,15 @@ header a.site-title {
 }
 
 main {
-  padding: 2.5rem;
+  position: relative;
+  padding: 0 2.5rem 2.5rem;
   color: #222;
+}
+
+.wall-banner {
+  margin: 0 -2.5rem 2rem;
+  height: 220px;
+  background: url("../images/wall-bg.svg") top center / cover no-repeat;
 }
 
 a { color: var(--link); }

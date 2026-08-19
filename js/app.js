@@ -1,5 +1,7 @@
 // Minimal markdown blog: fetches .md files with a small YAML-ish frontmatter block
 // and renders them client-side with marked.js. No build step required.
+// Single page (index.html): shows the post list, or a single article when a
+// `?slug=` query param is present, all driven by posts.json.
 
 function parseFrontmatter(raw) {
   const match = raw.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
@@ -26,32 +28,23 @@ async function fetchPostMarkdown(slug) {
   return parseFrontmatter(await res.text());
 }
 
-async function renderIndex() {
-  const list = document.getElementById('post-list');
+async function renderList(container) {
+  document.title = 'Pefe.me';
   try {
     const posts = await fetchPostsIndex();
-    list.innerHTML = posts.filter((p) => !p.hidden).map((p) => `
-      <a class="post-card" href="post.html?slug=${encodeURIComponent(p.slug)}">
+    container.innerHTML = posts.filter((p) => !p.hidden).map((p) => `
+      <a class="post-card" href="index.html?slug=${encodeURIComponent(p.slug)}">
         <h2>${p.title}</h2>
         <div class="meta">${p.date}${p.category ? ' · ' + p.category : ''}</div>
         <div class="desc">${p.description}</div>
       </a>
     `).join('');
   } catch (err) {
-    list.innerHTML = `<div class="error">${err.message}</div>`;
+    container.innerHTML = `<div class="error">${err.message}</div>`;
   }
 }
 
-async function renderPost() {
-  const container = document.getElementById('article');
-  const params = new URLSearchParams(location.search);
-  const slug = params.get('slug');
-
-  if (!slug) {
-    container.innerHTML = '<div class="error">缺少文章参数</div>';
-    return;
-  }
-
+async function renderArticle(container, slug) {
   try {
     const { meta, body } = await fetchPostMarkdown(slug);
     document.title = `${meta.title || slug} - Pefe.me`;
@@ -67,5 +60,16 @@ async function renderPost() {
     `;
   } catch (err) {
     container.innerHTML = `<div class="error">${err.message}</div>`;
+  }
+}
+
+function renderApp() {
+  const container = document.getElementById('content');
+  const slug = new URLSearchParams(location.search).get('slug');
+
+  if (slug) {
+    renderArticle(container, slug);
+  } else {
+    renderList(container);
   }
 }

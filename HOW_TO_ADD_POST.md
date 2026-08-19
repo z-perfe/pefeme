@@ -42,7 +42,7 @@ image: "images/wo-de-xin-wenzhang.jpg"
 
 - `slug` 必须和 `posts/` 里的文件名（不含 `.md`）完全一致，否则文章打开会 404。
 - 首页按 `posts.json` 数组顺序展示，越靠前显示越靠前，通常把新文章放在数组最前面。
-- `hidden` 设为 `true` 可将文章从首页列表隐藏（仍可通过 `post.html?slug=` 直接访问）；设为 `false` 或省略则正常显示。
+- `hidden` 设为 `true` 可将文章从首页列表隐藏（仍可通过 `index.html?slug=` 直接访问）；设为 `false` 或省略则正常显示。
 
 ## 4. 本地预览
 
@@ -52,4 +52,4 @@ image: "images/wo-de-xin-wenzhang.jpg"
 python -m http.server 8000
 ```
 
-然后浏览器访问 `http://localhost:8000/index.html` 查看首页，或 `http://localhost:8000/post.html?slug=你的slug` 查看单篇文章。
+整个博客只有一个页面 `index.html`：不带参数访问 `http://localhost:8000/index.html` 显示文章列表，带上 `?slug=你的slug` 则显示对应文章正文，具体显示哪部分由 `js/app.js` 读取 URL 和 `posts.json` 决定。
