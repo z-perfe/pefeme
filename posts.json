@@ -1,5 +1,14 @@
 [
   {
+    "slug": "ren-jian-1",
+    "title": "人间 一",
+    "date": "2026-09-16",
+    "description": "鸟语花藤夏日长,空蒙天色晚来凉",
+    "category": "",
+    "image": "images/ren-jian-1.jpg",
+    "hidden": false
+  },
+  {
     "slug": "wu-gan-1",
     "title": "无感 一",
     "date": "2026-09-09",
