@@ -6,7 +6,7 @@
     "description": "秋风瑟瑟紧背来，祈福树下叶旋回",
     "category": "",
     "image": "",
-    "hidden": true
+    "hidden": false
   },
   {
     "slug": "ren-jian-1",
@@ -15,7 +15,7 @@
     "description": "修仙飞剑岁悠长，万劫重生道寻常。路过人间曾一瞥，少年肤色揽春光。",
     "category": "",
     "image": "",
-    "hidden": false
+    "hidden": true
   },
   {
     "slug": "wu-gan-1",
